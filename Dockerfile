@@ -2,7 +2,6 @@ FROM savonet/liquidsoap-ci-build:rolling-release-v2.2.x@sha256:4cee43e436f6dff60
 
 WORKDIR /liq/
 COPY . .
-RUN liquidsoap -c stream.liq
 
 EXPOSE 8080
 STOPSIGNAL SIGTERM
